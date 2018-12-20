@@ -57,7 +57,7 @@ mod utests {
 
     #[test]
     fn double64_opt_chain(){
-        let m = std::f64::MAX;
+        //let m = std::f64::MAX;
         let res = Some(3.0).map(double64).and_then(|x|{ Some(x) } );
         assert_eq!(None, res);
     }
